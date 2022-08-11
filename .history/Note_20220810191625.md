@@ -1,0 +1,33 @@
+##Logo, Icon을 만드는 방법
+
+1. Font Awesome 이용 - 이미 만들어져 있는 아이콘 사용
+   https://fontawesome.com/
+
+2. Canva.com 이용 - 자신만의 아이콘 만들 때, Background 배경 만들 때 사용
+   https://www.canva.com/
+   'Logo' 검색 -> Blank -> elements
+   무료버전에서는 백그라운드 색상 제거 불가하므로: PNG 파일로 저장 -> remove.bg로 이동해 투명 배경으로 변경
+
+##Icon의 색상을 수정하는 방법
+
+1. svg 파일을 Text Editor로 열어서 <path> 안의 fill = "원하는 색상의 hex코드 " 를 입력하거나 수정
+
+2. 사이트 이용
+   IconScout
+   https://iconscout.com/icon-editor
+
+##색상 고르는 방법
+
+1. Google Color Picker
+2. Adobe Color -> 색 조합에 유용
+   https://color.adobe.com/ko/create/color-wheel
+
+##Font
+
+1. Google Fonts
+   https://fonts.google.com/
+
+##script
+
+-defer
+defer를 이용하는 것은 html파일이 pursuing되는 동안 자바스크립트 파일을 동시에 다운로드 받는다. 다만, html파일이 pursuing이 다 완료된 다음에 자바스크립트 파일을 실행한다.
