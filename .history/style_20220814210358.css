@@ -428,17 +428,3 @@
   background-color: var(--color-dark-white);
 }
 
-.contact_links{
-  padding: 24px 0;
-}
-
-.contact_links i{
-  font-size: var(--font-large);
-  color: var(--color-white);
-
-}
-
-.contact_links i:hover{
-  color: var(--color-yellow);
-  transform: scale(120%);
-}

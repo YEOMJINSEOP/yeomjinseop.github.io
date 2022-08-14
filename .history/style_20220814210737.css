@@ -430,13 +430,9 @@
 
 .contact_links{
   padding: 24px 0;
-}
-
-.contact_links i{
   font-size: var(--font-large);
-  color: var(--color-white);
-
-}
+  color: var(--color-black)
+;}
 
 .contact_links i:hover{
   color: var(--color-yellow);

@@ -434,11 +434,11 @@
 
 .contact_links i{
   font-size: var(--font-large);
-  color: var(--color-white);
+  color: var(--color-yellow);
 
 }
 
 .contact_links i:hover{
-  color: var(--color-yellow);
+  color: var(--color-white);
   transform: scale(120%);
 }

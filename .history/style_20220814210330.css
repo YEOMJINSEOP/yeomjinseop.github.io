@@ -4,7 +4,7 @@
   /* Color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
-  --color-dark-white: #bdbdbd;
+  --color-dark-whtie: #bdbdbd;
   --color-pink: #fe918d;
   --color-dark-pink: #ff6863;
   --color-deep-pink: #FF8ACA;
@@ -425,20 +425,6 @@
 /* Contact */
 
 #contact{
-  background-color: var(--color-dark-white);
+  background-color: var(--color-dark-whtie);
 }
 
-.contact_links{
-  padding: 24px 0;
-}
-
-.contact_links i{
-  font-size: var(--font-large);
-  color: var(--color-white);
-
-}
-
-.contact_links i:hover{
-  color: var(--color-yellow);
-  transform: scale(120%);
-}
