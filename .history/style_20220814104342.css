@@ -110,7 +110,7 @@
   font-weight: var(--weight-regular);
  }
 
- .navbar__menu__item.active{
+ .navbar__menu .active{
   border: 1px solid white;
  }
 
@@ -118,7 +118,6 @@
   padding: 8px 12px;
   margin: 0 4px;
   border-radius: var(--size-border-radius);
-  cursor: pointer;
  }
 
  .navbar__menu__item:hover{

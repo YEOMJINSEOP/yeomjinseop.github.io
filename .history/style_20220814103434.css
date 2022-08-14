@@ -40,9 +40,7 @@
 
  body{
   margin: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  cursor: default;
-}
+ }
 
  a{
   text-decoration: none;
@@ -51,7 +49,6 @@
 
  ul{
   list-style: none;
-  padding-left: 0;
  }
 
 
@@ -95,7 +92,6 @@
   align-items: center;
   background-color: var(--color-pink);
   color: var(--color-white);
-  padding: 16px;
  }
 
  .navbar__logo{
@@ -110,21 +106,13 @@
   font-weight: var(--weight-regular);
  }
 
- .navbar__menu__item.active{
+ .navbar__menu .active{
   border: 1px solid white;
+  border-radius: var(--size-border-radius);
  }
 
  .navbar__menu__item{
   padding: 8px 12px;
-  margin: 0 4px;
-  border-radius: var(--size-border-radius);
-  cursor: pointer;
+  cursor: default;
  }
-
- .navbar__menu__item:hover{
-  background-color: var(--color-dark-pink);
- }
-
-
-
 

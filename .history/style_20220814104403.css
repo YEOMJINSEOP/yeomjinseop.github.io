@@ -110,7 +110,7 @@
   font-weight: var(--weight-regular);
  }
 
- .navbar__menu__item.active{
+ .navbar__menu .active{
   border: 1px solid white;
  }
 
