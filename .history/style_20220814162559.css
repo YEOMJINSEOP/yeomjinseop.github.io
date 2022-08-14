@@ -174,9 +174,6 @@
 .section{
   padding: 50px;
   text-align: center;
-}
-
-.section__contatiner{
   max-width: 1200px;
 }
 
@@ -250,11 +247,8 @@
 }
 
 /* Skill */
-
-#skills{
-  background-color: var(--color-yellow);
-}
 .skillset{
+
   display: flex;
   justify-content: center;
   margin: 12px 12px;
@@ -303,17 +297,11 @@
 }
 
 .tools{
+  display: flexbox;
+  align-items: baseline;
   padding: 12px;
   height:200px;
 } 
-
-.tools__list{
-  padding: 30px 0;
-}
-
-.tools__list li{
-  margin: 12px;
-}
 
 
 .etc{

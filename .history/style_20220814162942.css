@@ -176,7 +176,7 @@
   text-align: center;
 }
 
-.section__contatiner{
+.section.section__contatiner{
   max-width: 1200px;
 }
 
@@ -307,12 +307,8 @@
   height:200px;
 } 
 
-.tools__list{
+.tools_list{
   padding: 30px 0;
-}
-
-.tools__list li{
-  margin: 12px;
 }
 
 
