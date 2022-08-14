@@ -470,15 +470,5 @@
   .about__majors{
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .major{
-    margin: 0;
-    margin-bottom: 48px;
-  }
-
-  .skillset{
-    display: flex;
-    flex-direction: column;
   }
 }

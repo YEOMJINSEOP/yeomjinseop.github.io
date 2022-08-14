@@ -445,40 +445,12 @@
 
 .toggle_button{
   position: absolute;
-  top: 26px;
+  top: 32px;
   right: 36px;
   font-size: var(--font-medium);
   color: var(--color-white);
-  display: none;
 }
 
 @media screen and (max-width: 768px) {
-  #navbar{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .toggle_button{
-    display: block;
-  }
-
-  .navbar__menu{
-    width: 100%;
-    display: None;
-  }
-
-  .about__majors{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .major{
-    margin: 0;
-    margin-bottom: 48px;
-  }
-
-  .skillset{
-    display: flex;
-    flex-direction: column;
-  }
+  
 }
