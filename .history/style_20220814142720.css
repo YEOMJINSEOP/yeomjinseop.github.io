@@ -14,6 +14,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-dark-green: #0c1a10;
 
   /* Font size */
   --font-large: 48px;
@@ -30,9 +31,6 @@
 
   /* Size */
   --size-border-radius: 4px;
-
-  /* Animation */
-  --animation-duration: 300ms;
 
  }
 
@@ -137,7 +135,7 @@
  /* Home */
 
  #home{
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-green);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,7 +197,7 @@
   border-radius: 50%;
   color: var(--color-blue);
   margin: 8px 12px;
-  transition: all var(--animation-duration) linear;
+  transition: all 300ms linear;
 }
 
 .major__icon:hover{
@@ -239,9 +237,9 @@
 }
 
 .job__name{
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
 }
 
 .job__description{
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
 }

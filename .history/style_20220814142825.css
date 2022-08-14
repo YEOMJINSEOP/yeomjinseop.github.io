@@ -14,6 +14,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-dark-green: #0c1a10;
 
   /* Font size */
   --font-large: 48px;
@@ -137,7 +138,7 @@
  /* Home */
 
  #home{
-  background-color: var(--color-dark-pink);
+  background-color: var(--color-dark-green);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -239,9 +240,9 @@
 }
 
 .job__name{
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
 }
 
 .job__description{
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
 }

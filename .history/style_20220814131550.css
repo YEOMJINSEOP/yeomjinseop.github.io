@@ -31,9 +31,6 @@
   /* Size */
   --size-border-radius: 4px;
 
-  /* Animation */
-  --animation-duration: 300ms;
-
  }
 
  /* Universal tages */
@@ -43,7 +40,7 @@
 
  body{
   margin: 0;
-  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   cursor: default;
 }
 
@@ -137,7 +134,7 @@
  /* Home */
 
  #home{
-  background-color: var(--color-dark-pink);
+  background-image: url('/images/homebackground.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,53 +192,23 @@
   width: 200px;
   font-size: 100px;
   line-height: 200px;
-  border: 2px solid var(--color-blue);
+  border: 2px solid black;
   border-radius: 50%;
-  color: var(--color-blue);
+  margin-bottom: 8px;
+}
+
+.major__icon{
   margin: 8px 12px;
-  transition: all var(--animation-duration) linear;
 }
 
-.major__icon:hover{
-  color: var(--color-orange);
-  border-color: var(--color-orange);
-}
-
-.major__icon:hover i{
-  transform: scale(120%);
-}
-
-
-.major__title {
+.major__title{
   font-size: var(--font-regular);
-  font-weight: var(--weight-semi-bold);
-  color:var(--color-grey);
-  margin: 8px;;
 }
 
 .major__description{
-  font-size: var(--font-small);
-  color: var(--color-grey);
+  margin: 8px 12px;
 }
 
 .about__jobs{
-  margin: 12px 0;
-}
-
-.job{
-  display: flex;
-  align-items: center;
-}
-
-.job__logo{
-  padding: 8px;
-  margin: 4px 12px;
-}
-
-.job__name{
-  font-size: var(--font-small);
-}
-
-.job__description{
-  font-size: var(--font-micro);
+  margin: 12px;
 }

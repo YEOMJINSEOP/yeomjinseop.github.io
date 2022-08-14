@@ -239,9 +239,9 @@
 }
 
 .job__name{
-  font-size: var(--font-small);
+  font-size: var(--font-regular);
 }
 
 .job__description{
-  font-size: var(--font-micro);
+  font-size: var(--font-small);
 }
