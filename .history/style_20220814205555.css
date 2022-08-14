@@ -422,5 +422,9 @@
   transform: translateY(0);
 }
 
-/* Contact */
+/* Testimonial */
+
+#testimonial {
+  background-color: var(--color-light-yellow);
+}
 

@@ -13,13 +13,11 @@
   --color-light-gray: #7c7979;
   --color-blue: #73aace;
   --color-yellow: #fff7d1;
-  --color-light-yellow: #FBFAE2;
   --color-orange: #feb546;
   --color-black: #000000;
   --color-yellow-green: #BEEBA9;
   --color-sky-blue: #A9D7EB;
   --color-deep-blue: #4280EB;
-  --color-dark-deep-blue: #627BA3;
 
   /* Font size */
   --font-large: 48px;
@@ -137,7 +135,7 @@
  }
 
  .navbar__menu__item:hover{
-  background-color: var(--color-dark-deep-blue);
+  background-color: var(--color-dark-pink);
  }
 
  /* Home */
@@ -173,7 +171,7 @@
  }
 
 .home__button:hover{
-  background-color: var(--color-deep-blue);
+  background-color: var(--color-dark-pink);
 }
 
 /* Section Common */
@@ -332,7 +330,6 @@
 
 .work__categories{
   margin: 24px 0 ;
-  padding: 12px 0;
 }
 
 .category__btn{
@@ -422,5 +419,9 @@
   transform: translateY(0);
 }
 
-/* Contact */
+/* Testimonial */
+
+#testimonial {
+  background-color: var(--y);
+}
 
