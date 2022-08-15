@@ -469,16 +469,8 @@
   border-radius: 50%;
   background-color: var(--color-deep-blue);
   position: fixed;
-  top: 90%;
-  left: 93%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--animation-duration) linear;
-}
-
-.arrow_up.visible{
-  opacity: 1;
-  pointer-events: auto;
+  top: 95%;
+  left: 95%;
 }
 
 @media screen and (max-width: 768px) {

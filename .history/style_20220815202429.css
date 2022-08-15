@@ -478,7 +478,7 @@
 
 .arrow_up.visible{
   opacity: 1;
-  pointer-events: auto;
+  pointer-events: all;
 }
 
 @media screen and (max-width: 768px) {

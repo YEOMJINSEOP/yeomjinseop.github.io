@@ -471,14 +471,11 @@
   position: fixed;
   top: 90%;
   left: 93%;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity var(--animation-duration) linear;
+  display: none;
 }
 
-.arrow_up.visible{
-  opacity: 1;
-  pointer-events: auto;
+.arrow_up.scroll{
+  display: block;
 }
 
 @media screen and (max-width: 768px) {

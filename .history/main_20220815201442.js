@@ -56,12 +56,4 @@ arrowUpBtn.addEventListener('click', () => {
     behavior: 'smooth'});
 })
 
-document.addEventListener('scroll', () => {
-  if(window.scrollY > homeHeight/2){
-    arrowUpBtn.classList.add('visible');
-  } else{
-    arrowUpBtn.classList.remove('visible');
-  }
-})
-
 //Functions

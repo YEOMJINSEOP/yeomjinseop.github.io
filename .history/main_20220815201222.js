@@ -50,18 +50,7 @@ document.addEventListener('scroll', () => {
 
 const arrowUpBtn = document.querySelector('.arrow_up');
 arrowUpBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: 'smooth'});
-})
-
-document.addEventListener('scroll', () => {
-  if(window.scrollY > homeHeight/2){
-    arrowUpBtn.classList.add('visible');
-  } else{
-    arrowUpBtn.classList.remove('visible');
-  }
+  window.scrollTo(0,0);
 })
 
 //Functions

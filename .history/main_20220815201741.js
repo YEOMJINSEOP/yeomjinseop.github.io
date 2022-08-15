@@ -57,10 +57,10 @@ arrowUpBtn.addEventListener('click', () => {
 })
 
 document.addEventListener('scroll', () => {
-  if(window.scrollY > homeHeight/2){
-    arrowUpBtn.classList.add('visible');
+  if(window.scrollY > 0){
+    arrowUpBtn.classList.add('scroll');
   } else{
-    arrowUpBtn.classList.remove('visible');
+    arrowUpBtn.classList.remove('scroll');
   }
 })
 
