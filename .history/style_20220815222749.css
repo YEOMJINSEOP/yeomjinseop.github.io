@@ -131,6 +131,11 @@
   display: flex;
   font-size: var(--font-small);
   font-weight: var(--weight-regular);
+  border: 1px solid transparent;
+ }
+
+ .navbar__menu:hover{
+  border-color: var(--color-white);
  }
 
  .navbar__menu__item{
@@ -138,12 +143,10 @@
   margin: 0 4px;
   border-radius: var(--size-border-radius);
   cursor: pointer;
-  border: 1px solid transparent;
  }
 
  .navbar__menu__item:hover{
   background-color: var(--color-dark-deep-blue);
-  border-color: var(--color-white);
  }
 
  /* Home */

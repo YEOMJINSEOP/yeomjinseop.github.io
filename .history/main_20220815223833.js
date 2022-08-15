@@ -13,6 +13,13 @@ document.addEventListener('scroll', () => {
     }
   })
 
+//Navbar menu border when hovering
+
+const navbarMenuItem = document.querySelectorAll('.navbar__menu__item');
+navbarMenuItem.addEventListener('', () => {
+
+})
+
 // Handle scrolling when tap the navbar menu.
 const navbarMenu = document.querySelector('.navbar__menu');
 
@@ -97,6 +104,6 @@ projectBtnContainer.addEventListener('click', (e) => {
 
 //Functions
 function scrollIntoView(selector){
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior: 'smooth'});
+  const target = document.querySelector(selector);
+  target.scrollIntoView();
 }
