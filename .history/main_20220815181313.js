@@ -14,6 +14,11 @@ document.addEventListener('scroll', () => {
   })
 
 // Handle scrolling when tap the navbar menu.
+function scrollIntoView(selector){
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView();
+}
+
 const navbarMenu = document.querySelector('.navbar__menu');
 
 navbarMenu.addEventListener('click', (event) => {
@@ -24,7 +29,8 @@ navbarMenu.addEventListener('click', (event) => {
   if(targetLink == null){
     return;
   } else {
-    scrollIntoView(targetLink);
+    const targetScrollTo = document.querySelector(targetLink);
+    targetScrollTo.scrollIntoView({behavior: "smooth"});
   }
 })
 
@@ -35,10 +41,5 @@ const homeButton = document.querySelector('.home__button');
 homeButton.addEventListener('click', () => {
   scrollIntoView('#contact');
 })
-
-function scrollIntoView(selector){
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior: 'smooth'});
-}
 
 

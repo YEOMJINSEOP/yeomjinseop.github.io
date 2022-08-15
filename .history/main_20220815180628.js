@@ -14,6 +14,7 @@ document.addEventListener('scroll', () => {
   })
 
 // Handle scrolling when tap the navbar menu.
+
 const navbarMenu = document.querySelector('.navbar__menu');
 
 navbarMenu.addEventListener('click', (event) => {
@@ -24,21 +25,17 @@ navbarMenu.addEventListener('click', (event) => {
   if(targetLink == null){
     return;
   } else {
-    scrollIntoView(targetLink);
+    const targetScrollTo = document.querySelector(targetLink);
+    targetScrollTo.scrollIntoView({behavior: "smooth"});
   }
 })
 
 // Handle scrolling when tap the contact me button.
 
-const homeButton = document.querySelector('.home__button');
+const toggleButton = document.querySelector(".toggle_button");
 
-homeButton.addEventListener('click', () => {
-  scrollIntoView('#contact');
+toggleButton.querySelector('click', () => {
+  console.log("click!");
+  const contact = document.querySelector('#contact'); 
+  contact.scrollIntoView();
 })
-
-function scrollIntoView(selector){
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior: 'smooth'});
-}
-
-

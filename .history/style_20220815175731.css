@@ -112,9 +112,8 @@
   align-items: center;
   background-color: transparent;
   color: var(--color-white);
-  padding: 2px;
+  padding: 8px;
   transition: all var(--animation-duration) ease-in-out;
-  z-index: 1;
  }
 
  #navbar.navbar__dark{

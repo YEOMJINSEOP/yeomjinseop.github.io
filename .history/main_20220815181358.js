@@ -24,7 +24,8 @@ navbarMenu.addEventListener('click', (event) => {
   if(targetLink == null){
     return;
   } else {
-    scrollIntoView(targetLink);
+    const targetScrollTo = document.querySelector(targetLink);
+    scrollIntoView(targetScrollTo);
   }
 })
 
@@ -38,7 +39,7 @@ homeButton.addEventListener('click', () => {
 
 function scrollIntoView(selector){
   const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior: 'smooth'});
+  scrollTo.scrollIntoView();
 }
 
 
