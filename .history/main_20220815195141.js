@@ -45,8 +45,9 @@ function scrollIntoView(selector){
 // Make transparent home when scrolling
 
 const home = document.querySelector('#home');
-const homeContainer = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
-  homeContainer.style.opacity = 1 - window.scrollY/homeHeight;
+  if(scrollY > homeHeight/2){
+    home.classList.add('transparent');
+  }
 })
