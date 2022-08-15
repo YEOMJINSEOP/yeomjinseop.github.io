@@ -106,14 +106,11 @@
  /* Nav */
  #navbar{
   display: flex;
-  position: fixed;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: var(--color-deep-blue);
   color: var(--color-white);
-  padding: 12px;
-  transition: all var(--animation-duration) ease-in-out;
+  padding: 16px;
  }
 
  #navbar.navbar__dark{
@@ -154,7 +151,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 150px;
+  padding: 40px;
   text-align: center;
  }
  
