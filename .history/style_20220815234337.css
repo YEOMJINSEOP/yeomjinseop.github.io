@@ -428,15 +428,15 @@
 }
 
 .project__description h3{
-  color: var(--color-orange);
+  color: var(--color-white);
 }
 
 .project__description h3:after{
   content: " ";
   display: block;
   position: relative;
-  left: 38%;
-  width: 70px;
+  left: 50%;
+  width: 20px;
   height: 2px;
   margin-top: 8px;
   margin-left: -8px;

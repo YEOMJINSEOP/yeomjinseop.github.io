@@ -6,9 +6,6 @@ const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 document.addEventListener('scroll', () => {
-  // toggle button menu remove when scrolling
-  navbarMenu.classList.remove('visible');
-
     if(scrollY > navbarHeight){
       navbar.classList.add('navbar__dark');
     } else {
@@ -100,11 +97,11 @@ projectBtnContainer.addEventListener('click', (e) => {
   }, 300)
 })
 
-// Navbar Toggle Button in Small Screen
+// Navbar Toggle Button
 
-const toggleBtn = document.querySelector('.toggle__button');
+const toggleBtn = document.querySelector('toggle__button');
 toggleBtn.addEventListener('click', () => {
-  navbarMenu.classList.toggle('visible');
+  navbarMenu.style.display: flex;
 })
 
 //Functions
