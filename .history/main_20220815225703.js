@@ -78,7 +78,7 @@ projectBtnContainer.addEventListener('click', (e) => {
   active.classList.remove('active');
   const target =
     e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-  target.classList.add('active');
+  target.classList.add('selected');
 
   projectContainer.classList.add('anim-out');
   setTimeout(()=>{

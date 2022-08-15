@@ -354,11 +354,6 @@
   background-color: var(--color-light-white);
 }
 
-.category__btn.active .category__count{
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .category__btn:hover {
   background-color: var(--color-light-white);
 }

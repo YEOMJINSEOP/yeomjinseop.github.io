@@ -350,13 +350,8 @@
   font-weight: var(--weight-semi-bold);
 }
 
-.category__btn.active{
+.category__btn active{
   background-color: var(--color-light-white);
-}
-
-.category__btn.active .category__count{
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .category__btn:hover {

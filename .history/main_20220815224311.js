@@ -73,14 +73,8 @@ const projects = document.querySelectorAll('.project');
 projectBtnContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
 
-  // Remove selection from the previous item and select the new one
-  const active = document.querySelector('.category__btn.active');
-  active.classList.remove('active');
-  const target =
-    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-  target.classList.add('active');
-
   projectContainer.classList.add('anim-out');
+
   setTimeout(()=>{
     projects.forEach((project) => {
       if(filter == null){
@@ -95,6 +89,12 @@ projectBtnContainer.addEventListener('click', (e) => {
     })
     projectContainer.classList.remove('anim-out');
   }, 300)
+})
+
+//Project button active when clicked.
+const projectBtns = document.querySelectorAll('.category__btn');
+projectBtns.addEventListener('click', (e) => {
+  e.target.classList.add('active');
 })
 
 
