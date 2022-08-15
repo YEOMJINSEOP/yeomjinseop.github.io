@@ -65,7 +65,7 @@ arrowUpBtn.addEventListener('click', () => {
     behavior: 'smooth'});
 })
 
-// Project Filtering when button clicked
+// Project Filtering
 const projectBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
@@ -73,22 +73,20 @@ const projects = document.querySelectorAll('.project');
 projectBtnContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
 
-  projectContainer.classList.add('anim-out');
-
-  setTimeout(()=>{
-    projects.forEach((project) => {
-      if(filter == null){
-        return;
-      }
-      if(filter === '*' || filter === project.dataset.type){
-        project.classList.remove('invisible');
-      } else{
-        project.classList.add('invisible');
-      }
+  console.log(filter);
   
-    })
-    projectContainer.classList.remove('anim-out');
-  }, 300)
+  projects.forEach((project) => {
+    if(filter == null){
+      return;
+    }
+
+    if(filter === '*' || filter === project.dataset.type){
+      project.classList.remove('invisible');
+    } else{
+      project.classList.add('invisible');
+    }
+
+  })
 })
 
 

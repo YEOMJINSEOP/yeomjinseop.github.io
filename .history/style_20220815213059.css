@@ -380,11 +380,9 @@
   flex-wrap:wrap;
   align-items: center;
   justify-content: center;
-  opacity: 1;
-  transition: all var(--animation-duration) ease-out;
 }
 
-.work__projects.anim-out{
+.work__project.anim-out{
   opacity: 0;
   transform: scale(0.96) translateY(40px);
 }

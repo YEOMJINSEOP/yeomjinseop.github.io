@@ -74,21 +74,18 @@ projectBtnContainer.addEventListener('click', (e) => {
   const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
 
   projectContainer.classList.add('anim-out');
-
-  setTimeout(()=>{
-    projects.forEach((project) => {
-      if(filter == null){
-        return;
-      }
-      if(filter === '*' || filter === project.dataset.type){
-        project.classList.remove('invisible');
-      } else{
-        project.classList.add('invisible');
-      }
   
-    })
-    projectContainer.classList.remove('anim-out');
-  }, 300)
+  projects.forEach((project) => {
+    if(filter == null){
+      return;
+    }
+    if(filter === '*' || filter === project.dataset.type){
+      project.classList.remove('invisible');
+    } else{
+      project.classList.add('invisible');
+    }
+
+  })
 })
 
 
