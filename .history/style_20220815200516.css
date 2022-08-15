@@ -453,7 +453,7 @@
 
 .toggle__button{
   position: absolute;
-  top: 12px;
+  top: 26px;
   right: 36px;
   font-size: var(--font-medium);
   color: var(--color-white);
