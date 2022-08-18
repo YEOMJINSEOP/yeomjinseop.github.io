@@ -500,11 +500,9 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* Navbar */
   #navbar{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-deep-blue);
   }
 
   .toggle__button{
@@ -514,14 +512,13 @@
   .navbar__menu{
     width: 100%;
     display: None;
-    text-align: center;
   }
 
   .navbar__menu.visible{
     display: flex;
     flex-direction: column;
   }
-  /* About */
+
   .about__majors{
     display: flex;
     flex-direction: column;
@@ -531,8 +528,6 @@
     margin: 0;
     margin-bottom: 48px;
   }
-
-  /* Skills */
 
   .skillset{
     display: flex;

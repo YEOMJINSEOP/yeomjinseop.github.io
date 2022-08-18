@@ -504,7 +504,7 @@
   #navbar{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-deep-blue);
+    z-index: 1;
   }
 
   .toggle__button{
@@ -515,6 +515,7 @@
     width: 100%;
     display: None;
     text-align: center;
+    background-color: var(--color-deep-blue);
   }
 
   .navbar__menu.visible{

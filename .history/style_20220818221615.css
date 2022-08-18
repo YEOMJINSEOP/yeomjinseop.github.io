@@ -504,7 +504,7 @@
   #navbar{
     display: flex;
     flex-direction: column;
-    background-color: var(--color-deep-blue);
+    padding-bottom: 100px;
   }
 
   .toggle__button{
