@@ -522,17 +522,14 @@
     flex-direction: column;
   }
   /* About */
-
-  #about{
-    padding-bottom: 24px;
-  }
   .about__majors{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 4px;
   }
   .major{
-    margin: 16px;
+    margin: 0;
     margin-bottom: 48px;
   }
 
