@@ -362,7 +362,7 @@
 }
 
 .category__btn:hover {
-  background-color:  var(--color-light-yellow);
+  background-color: var(--color-light-white);
 }
 
 .category__btn:hover .category__count{
