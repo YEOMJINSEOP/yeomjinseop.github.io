@@ -512,6 +512,7 @@
   }
 
   .navbar__menu{
+    /* width: 100%; */
     display: None;
     text-align: center;
   }

@@ -512,14 +512,14 @@
   }
 
   .navbar__menu{
+    width: 100%;
     display: None;
     text-align: center;
   }
 
-  .navbar__menu__container{
+  .navbar__menu__item{
     width: 100%;
   }
-
   .navbar__menu.visible{
     display: flex;
     flex-direction: column;
