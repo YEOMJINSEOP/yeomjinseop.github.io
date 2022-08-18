@@ -463,11 +463,11 @@
 .contact_links i{
   font-size: var(--font-large);
   color: var(--color-white);
-  transition: all var(--animation-duration) ease-out;
+
 }
 
 .contact_links i:hover{
-  color: var(--color-black);
+  color: var(--color-grey);
   transform: scale(120%);
 }
 
