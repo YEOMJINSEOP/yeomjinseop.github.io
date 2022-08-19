@@ -28,7 +28,6 @@ navbarMenu.addEventListener('click', (event) => {
     return;
   } else {
     scrollIntoView(targetLink);
-    selectNavItem(target);
   }
 })
 
@@ -108,8 +107,11 @@ toggleBtn.addEventListener('click', () => {
   navbarMenu.classList.toggle('visible');
 })
 
-
-// Select Navbar button when scrolling(wheel)
+//Functions
+function scrollIntoView(selector){
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior: 'smooth'});
+}
 
 // 1. 모든 섹션 요소들과 메뉴 아이템을 가지고 온다
 // 2. IntersectionObserver를 이용해서 모든 섹션들을 관찰한다.
@@ -120,6 +122,7 @@ const sectionIds = [
   '#about',
   '#skills',
   '#work',
+  '#testimonials',
   '#contact',
 ];
 
@@ -130,10 +133,8 @@ const navItems = sectionIds.map(id =>
   document.querySelector(`[data-link="${id}"]`)
 )
 
-
-let selectedNavIndex = 0;
-let selectedNavItem = navItems[0];
-
+console.log(sections);
+console.log(navItems);
 
 const observerOptions = {
   root: null,
@@ -143,42 +144,10 @@ const observerOptions = {
 
 const observerCallback = (entries, observer) => {
   entries.forEach(entry => {
-    if(!entry.isIntersecting && entry.intersectionRatio > 0){
-      const index = sectionIds.indexOf(`#${entry.target.id}`);
-      // console.log(entry);
-
-      if(entry.boundingClientRect.y < 0){
-        selectedNavIndex = index + 1;
-      } else{
-        selectedNavIndex = index - 1;
-      }
-
-    }
+    console.log(entry.target);
   });
 }
 
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 sections.forEach(section => observer.observe(section));
-
-window.addEventListener('wheel', () => {
-  if(window.scrollY === 0){
-    selectedNavIndex = 0;
-  } else if(window.scrollY + window.innerHeight === document.body.clientHeight){
-    selectedNavIndex = navItems.length - 1;
-  }
-  selectNavItem(navItems[selectedNavIndex]);
-} )
-
-//Functions
-function scrollIntoView(selector){
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior: 'smooth'});
-  selectNavItem(navItems[sectionIds.indexOf(selector)]);
-}
-
-function selectNavItem(selected){
-  selectedNavItem.classList.remove('active');
-  selectedNavItem = selected;
-  selectedNavItem.classList.add('active');
-}

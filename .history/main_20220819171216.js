@@ -28,7 +28,6 @@ navbarMenu.addEventListener('click', (event) => {
     return;
   } else {
     scrollIntoView(targetLink);
-    selectNavItem(target);
   }
 })
 
