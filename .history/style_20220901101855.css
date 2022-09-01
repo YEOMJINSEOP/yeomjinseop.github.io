@@ -162,7 +162,7 @@
  }
  
  .home__avatar{
-  padding: 2px;
+  padding: 10px;
   border: 2px solid var(--color-white);
   border-radius: 50%;
   width: 200px;
