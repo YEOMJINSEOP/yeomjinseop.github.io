@@ -103,11 +103,8 @@
   margin: 4px 0;
  }
 
-
 /* Section Common */
-
-
-section{
+.section{
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 40px;
@@ -128,15 +125,6 @@ section{
 
 
  /* Nav */
-
- nav{
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  text-align: center;
-}
-
  #navbar{
   display: flex;
   position: relative;
@@ -149,6 +137,10 @@ section{
   box-shadow: 0 3px 3px -2px lightgray; 
   transition: all var(--animation-duration) ease-in-out;
   
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 4px;
+  padding-bottom: 4px;
  }
  
  .navbar__menu{ 
@@ -309,50 +301,22 @@ section{
 /* Publications */
 
 .section__publications{
-  /* padding-left: 120px; */
+  padding-left: 120px;
   background-color: #f1f1f1;
-  min-height: 300px;
+  min-height:300px;
 }
-.publication__item{
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 40px;
-}
+
 .publication__image {
-  width: 260px;
-  height: 170px;
+  width: 350px;
   border-radius: 10%;
   display: block;
 }
 
-.publication__details{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-left: 20px;
-}
-
 .publication__title{
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
-.publication__authors{
-  margin-bottom: 10px;
-}
 
-.publication__conference{
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.publication__link{
-  display: flex;
-}
-
-.publication__link > a {
-  color: navy;
-}
 
 
 
@@ -452,54 +416,9 @@ section{
     width: 100%;
   }
 
-/*Publications*/
-  /* #publications{
-    display: none;
-  } */
-  .section__publications{
-    background-color: #f1f1f1;
-  }
-  .publication__item{
-    display: flex;
-    flex-direction: row;
-    align-self: start;
-    justify-content: start;
-    margin-bottom: 20px;
-  }
-  .publication__image {
-    display: none;
-  }
-  
-  .publication__details{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-left: 0px;
-    
-  }
-  
-  .publication__title{
-    font-weight: bold;
-    margin-bottom: px;
-  }
-  
-  .publication__authors{
-    margin-bottom: px;
-  }
-  
-  .publication__conference{
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-  
-  .publication__link{
-    display: flex;
-  }
-  
-  .publication__link > a {
-    color: navy;
-  }
-  
 
+  #publications{
+    display: none;
+  }
 
 }

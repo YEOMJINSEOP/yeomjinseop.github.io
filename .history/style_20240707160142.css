@@ -103,14 +103,19 @@
   margin: 4px 0;
  }
 
-
 /* Section Common */
-
+nav{
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
 
 section{
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 40px;
+  padding-top: 4px;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -128,15 +133,6 @@ section{
 
 
  /* Nav */
-
- nav{
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  text-align: center;
-}
-
  #navbar{
   display: flex;
   position: relative;
@@ -316,7 +312,7 @@ section{
 .publication__item{
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  background-color: red;
 }
 .publication__image {
   width: 260px;
@@ -328,30 +324,14 @@ section{
 .publication__details{
   display: flex;
   flex-direction: column;
-  align-items: start;
-  padding-left: 20px;
 }
 
 .publication__title{
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.publication__authors{
-  margin-bottom: 10px;
 }
 
 .publication__conference{
   font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.publication__link{
-  display: flex;
-}
-
-.publication__link > a {
-  color: navy;
 }
 
 
@@ -452,54 +432,9 @@ section{
     width: 100%;
   }
 
-/*Publications*/
-  /* #publications{
-    display: none;
-  } */
-  .section__publications{
-    background-color: #f1f1f1;
-  }
-  .publication__item{
-    display: flex;
-    flex-direction: row;
-    align-self: start;
-    justify-content: start;
-    margin-bottom: 20px;
-  }
-  .publication__image {
-    display: none;
-  }
-  
-  .publication__details{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    padding-left: 0px;
-    
-  }
-  
-  .publication__title{
-    font-weight: bold;
-    margin-bottom: px;
-  }
-  
-  .publication__authors{
-    margin-bottom: px;
-  }
-  
-  .publication__conference{
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-  
-  .publication__link{
-    display: flex;
-  }
-  
-  .publication__link > a {
-    color: navy;
-  }
-  
 
+  #publications{
+    display: none;
+  }
 
 }
